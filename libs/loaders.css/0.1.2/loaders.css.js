@@ -45,15 +45,15 @@
       var elem = $(this);
       $.each(divs, function(key, value) {
         if (elem.hasClass(key))
-          elem.html(addDivs(value))
-      })
+          elem.html(addDivs(value));
+      });
     });
   };
 
   $(function() {
     $.each(divs, function(key, value) {
       $('.loader-inner.' + key).html(addDivs(value));
-    })
+  });
   });
 
 }).call(window, window.$ || window.jQuery || window.Zepto);
